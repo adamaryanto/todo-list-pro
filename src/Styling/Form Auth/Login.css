@@ -1,0 +1,134 @@
+/* Reset dasar */
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+}
+
+/* Container utama */
+.wrapperLogin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #ece9e6, #ffffff);
+}
+
+/* Form login */
+.formLogin {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.formLogin h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Input field */
+.formLogin input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.formLogin input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Lupa password */
+.forgotPassword{
+    color: #555;
+  font-size: 14px;
+  margin-bottom: 16px;
+  cursor: pointer;
+  text-align: end;
+}
+.formLogin p {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.formLogin p:hover {
+  text-decoration: underline;
+}
+
+/* Tombol login */
+.formLogin button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 16px;
+  transition: background-color 0.3s;
+}
+
+.formLogin button:hover {
+  background-color: #0056b3;
+}
+
+/* Link daftar */
+.formLogin span {
+  color: #007bff;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.formLogin span:hover {
+  text-decoration: underline;
+}
+
+/* Responsive untuk layar mobile */
+@media (max-width: 480px) {
+  .wrapperLogin {
+    padding: 20px;
+  }
+
+  .formLogin {
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: none;
+  }
+
+  .formLogin h1 {
+    font-size: 20px;
+  }
+
+  .formLogin input {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .formLogin button {
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  .formLogin p,
+  .formLogin span,
+  .forgotPassword {
+    font-size: 13px;
+  }
+}

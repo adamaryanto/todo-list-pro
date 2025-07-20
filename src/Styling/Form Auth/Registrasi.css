@@ -1,0 +1,107 @@
+/* Reset dasar */
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+}
+
+/* Container utama */
+.wrapperRegistrasi {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #f0f0f0, #ffffff);
+}
+
+/* Form registrasi */
+.formRegistrasi {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.formRegistrasi h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Input field */
+.formRegistrasi input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.formRegistrasi input:focus {
+  border-color: #28a745;
+  outline: none;
+}
+
+/* Tombol daftar */
+.formRegistrasi button {
+  width: 100%;
+  padding: 12px;
+  background-color: #28a745;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 16px;
+  transition: background-color 0.3s;
+}
+
+.formRegistrasi button:hover {
+  background-color: #1e7e34;
+}
+
+/* Link login */
+.formRegistrasi span {
+  color: #28a745;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.formRegistrasi span:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .wrapperRegistrasi {
+    padding: 20px;
+  }
+
+  .formRegistrasi {
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: none;
+  }
+
+  .formRegistrasi input,
+  .formRegistrasi button {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .formRegistrasi p,
+  .formRegistrasi span {
+    font-size: 13px;
+  }
+}

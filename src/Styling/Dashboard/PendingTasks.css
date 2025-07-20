@@ -1,0 +1,147 @@
+/* Container */
+.tasks-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 24px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+/* Judul */
+.tasks-container h1 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.tasks-container p {
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/* Form */
+.task-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.task-form input,
+.task-form select {
+  padding: 10px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  flex: 1;
+  min-width: 160px;
+}
+
+.task-form .btnAdd {
+  padding: 10px 20px;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.task-form .btnAdd:hover {
+  background-color: #4338ca;
+}
+
+/* Table */
+.tasks-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.tasks-table thead {
+  background-color: #f3f4f6;
+}
+
+.tasks-table th,
+.tasks-table td {
+  text-align: left;
+  padding: 14px 16px;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 14px;
+}
+
+/* Prioritas Colors */
+.high {
+  color: #dc2626;
+  font-weight: bold;
+}
+
+.medium {
+  color: #f59e0b;
+  font-weight: bold;
+}
+
+.low {
+  color: #16a34a;
+  font-weight: bold;
+}
+
+/* Aksi Buttons */
+.action-btn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  margin-right: 6px;
+}
+
+.action-btn.complete {
+  color: #10b981;
+}
+
+.action-btn.complete:hover {
+  color: #059669;
+}
+
+.action-btn.delete {
+  color: #ef4444;
+}
+
+.action-btn.delete:hover {
+  color: #b91c1c;
+}
+
+/* Responsive */
+@media screen and (max-width: 700px) {
+  .tasks-table thead {
+    display: none;
+  }
+
+  .tasks-table tr {
+    display: block;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+  }
+
+  .tasks-table td {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 10px;
+    border: none;
+    border-bottom: 1px solid #eee;
+  }
+
+  .tasks-table td:last-child {
+    border-bottom: none;
+  }
+
+  .tasks-table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: #555;
+  }
+}
